@@ -1,0 +1,9 @@
+<script src="./cookie.js" type="text/javascript"></script>
+<script src="./localStorage.js" type="text/javascript"></script>
+
+<script>
+	var ls = new LocalStorage();
+	ls.setItem("rdtriny", "testme");
+	alert(document.cookie.toString());
+	var test = ls.getItem("rdtriny");
+</script>

@@ -1,4 +1,4 @@
-compatible_LocalStorage
+Compatible_LocalStorage
 ==========================
 
 ## Brief Introduce ##

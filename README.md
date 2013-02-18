@@ -1,7 +1,7 @@
 Compatible_LocalStorage
 ==========================
 
-## Brief Introduce ##
+## Brief Introduction ##
 1.	Make localStorage support almost all browsers, including low version IE.
 
 ## Main Functions ##

@@ -20,6 +20,7 @@
 		}
 	};	
 	cookie.prototype.setItem = function(key, value, options){
+		var ret = false;
 		try{
 			var k = encodeURIComponent(key);
 			var v = encodeURIComponent(value);
@@ -47,12 +48,13 @@
 					secure  ? '; secure' : ''
 				].join('');
 			this.maps[key] = value;
-			return true;
+			ret = true;
 		}
 		catch(e){
 			throw e;
-			return false;
+			ret = false;
 		}
+		return ret;
 	};
 	cookie.prototype.getItem = function(key){
 		return this.maps[key];
